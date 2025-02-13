@@ -2,6 +2,7 @@ import { wineData } from "../constant/WineData";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "./Button";
+import Arrow from "../assets/thin-arrow.png"
 
 export default function Slider() {
     const [index, setIndex] = useState<number>(0);
@@ -28,11 +29,15 @@ export default function Slider() {
                     <div className="h-80 w-72"></div>
                 )}
 
-                <div className="flex justify-center items-center gap-10">
-                    <i
-                        className={"fa-regular fa-circle-left z-40 text-5xl cursor-pointer" + (index === 0 ? " text-gray-600" : "")}
-                        onClick={() => switchFunc(-1)}
-                    ></i>
+                <div className="flex justify-center items-center gap-3 md:gap-9 lg:gap-40 xl:gap-50">
+                    {index !== 0 ?(
+                        <div 
+                            className={"border-2 w-20 h-20 rounded-full flex justify-center items-center rotate-180 cursor-pointer" + (index === 0 ? " text-gray-600" : "")}
+                            onClick={() => switchFunc(-1)}>
+                        <img src={Arrow} className="h-14 w-14"/>
+                    </div>)
+                    :<div className=" w-20 h-20"></div>}
+            
 
                     <div className="relative w-72 h-80 overflow-hidden">
                         <AnimatePresence mode="wait">
@@ -48,11 +53,15 @@ export default function Slider() {
                             />
                         </AnimatePresence>
                     </div>
-
-                    <i
-                        className={"fa-regular fa-circle-right fa-circle-arrow-right z-40 text-5xl cursor-pointer" + (index === wineData.length - 1 ? " text-gray-600" : "")}
-                        onClick={() => switchFunc(1)}
-                    ></i>
+                    
+                    {index !== wineData.length - 1 ?(
+                        <div 
+                            className={"border-2 w-20 h-20 rounded-full flex justify-center items-center cursor-pointer z-40" + (index === 0 ? " text-gray-600" : "")}
+                            onClick={() => switchFunc(1)}>
+                                <img src={Arrow} className="h-14 w-14 z-40"/>
+                        </div>
+                    ):<div className=" w-20 h-20"></div>}
+                
                 </div>
 
                 {index !== wineData.length - 1 ? (
