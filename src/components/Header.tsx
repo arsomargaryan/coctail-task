@@ -1,4 +1,4 @@
-import Logo from "../assets/cocktails-logo-inspiration-drink-glass-bar-restaurant_63578-164.jpg"
+import Logo from "../assets/Logo.jpg"
 
 export default function Header() {
   return (
