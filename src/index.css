@@ -13,6 +13,12 @@
     font-style: normal;
   }
 
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
   .triangle{
     width: 0;
     height: 0;
@@ -32,3 +38,21 @@
     transform: translateX(20px);
   }
   
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+

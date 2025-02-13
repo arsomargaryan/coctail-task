@@ -1,15 +1,15 @@
 
-import BrandyUrl from "../assets/wines/brandy.png"
-import ChampagneUrl from "../assets/wines/champagne.png"
-import ClassicBeerUrl from "../assets/wines//classicBeer.png"
-import DarkBeerUrl from "../assets/wines/darkBeer.png"
-import RedWineUrl from "../assets/wines/redWine.png"
-import RoseWineUrl from "../assets/wines/roseWine.png"
-import WhiteWineUrl from "../assets/wines/whiteWine.png"
+import BrandyUrl from "../assets/drinks/brandy.png"
+import ChampagneUrl from "../assets/drinks/champagne.png"
+import ClassicBeerUrl from "../assets/drinks//classicBeer.png"
+import DarkBeerUrl from "../assets/drinks/darkBeer.png"
+import RedWineUrl from "../assets/drinks/redWine.png"
+import RoseWineUrl from "../assets/drinks/roseWine.png"
+import WhiteWineUrl from "../assets/drinks/whiteWine.png"
 
 
 
-export interface Wine {
+interface Wine {
     name:string
     description:string
     image:string

@@ -7,7 +7,8 @@ interface Props {
 
 export default function Button({style,text}:Props) {
   return (
-    <button className={style + " cursor-pointer"}>
+    <button 
+      className={style + " cursor-pointer"}>
         {text}
     </button>
   )
