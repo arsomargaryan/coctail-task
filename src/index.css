@@ -20,4 +20,15 @@
     border-right: 250px solid transparent;
     border-bottom: 100px solid #d4e084;
   }
+
+  .image-transition {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .image-transition.hidden {
+    opacity: 0;
+    transform: translateX(20px);
+  }
   
