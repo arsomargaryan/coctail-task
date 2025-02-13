@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+
+.satisfy-regular {
+    font-family: "Satisfy", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
