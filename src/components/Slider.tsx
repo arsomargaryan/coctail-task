@@ -39,7 +39,7 @@ export default function Slider() {
                     :<div className=" w-20 h-20"></div>}
             
 
-                    <div className="relative w-72 h-80 overflow-hidden">
+                    <div className="relative w-72 h-80 overflow-hidden z-40 drop-shadow-2xl">
                         <AnimatePresence mode="wait">
                             <motion.img
                                 key={index} 
@@ -77,8 +77,8 @@ export default function Slider() {
             </div>
 
             <div className="flex justify-center items-center">
-                <div className="flex flex-col justify-center items-center gap-3">
-                    <motion.div key={index} className="text-2xl bebas-neue-regular" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
+                <div className="flex flex-col justify-center items-center">
+                    <motion.div key={index} className="text-3xl bebas-neue-regular mt-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
                         {wineData[index].name}
                     </motion.div>
                     <motion.div key={index + "-desc"} className="text-sm text-center p-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
