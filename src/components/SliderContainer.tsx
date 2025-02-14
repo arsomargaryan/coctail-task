@@ -9,8 +9,8 @@ export default function SliderContainer() {
       <div className=" absolute bg-[#dee6ac] w-2xl h-50 rotate-[60deg] -top-5 left-[6%] lg:left-[15%] xl:left-[30%] z-10"></div>
       <div className=" absolute triangle rotate-[30deg] -right-[20%] -top-12 lg:-right-[15%] xl:-right-[10%] z-10"></div>
       <div className=" flex items-center justify-between p-14">
-        <div className="sancreek-regular text-2xl z-40 ">Our Products</div>
-        <div className="text-sm z-40">Make every party a cocktail party. 
+        <div className="sancreek-regular text-4xl z-40 ">Our Products</div>
+        <div className="z-40">Make every party a cocktail party. 
           <span className=" underline underline-offset-8"> Explore our vodkas</span>
         </div>
       </div>
